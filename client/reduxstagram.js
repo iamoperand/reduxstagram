@@ -8,10 +8,16 @@ import css from './styles/style.styl';
 
 //import components
 import Main from './components/Main';
-import PhotoGrid from './components/PhotoGrid';
-import Single from './components/Single';
 
-//import from react-router
-import { Router, Route, IndexRoute, BrowserHistory } from 'react-router';
 
-render(<Main></Main>, document.getElementById('root'));
+//import from react-router-dom
+import {
+BrowserRouter as Router,
+Route } from 'react-router-dom';
+
+const router = (
+  <Router>
+      <Route path="/" component={Main} />
+  </Router>
+);
+render(router, document.getElementById('root'));

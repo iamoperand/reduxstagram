@@ -1,6 +1,13 @@
 import React from 'react';
 
-import { Link } from 'react-router';
+import {
+Route,
+Link,
+Switch
+} from 'react-router-dom';
+
+import PhotoGrid from './PhotoGrid';
+import Single from './Single';
 
 class Main extends React.Component {
   render(){
@@ -16,10 +23,11 @@ class Main extends React.Component {
           // pass on this.props which will be fed by react-router.
           // So, to accomodate all of that, we need to use:
           // React.cloneElement
-        */} 
-
-        {React.cloneElement(this.props.children, this.props)}
-
+        */}
+        <Switch>
+          <Route {...this.props} exact path="/" component={PhotoGrid} />
+          <Route {...this.props} path="/view/:postId" component={Single} />
+        </Switch>
       </div>
     )
   }
