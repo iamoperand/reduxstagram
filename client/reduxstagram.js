@@ -8,5 +8,8 @@ import css from './styles/style.styl';
 
 //import components
 import Main from './components/Main';
+import PhotoGrid from './components/PhotoGrid';
+import Single from './components/Single';
 
-render(<Main><p>Hello Sushi</p></Main>, document.getElementById('root'));
+
+render(<Main></Main>, document.getElementById('root'));
