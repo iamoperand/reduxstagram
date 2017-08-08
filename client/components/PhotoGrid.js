@@ -8,6 +8,7 @@ class PhotoGrid extends React.Component {
       <div className="photo-grid">
         I am the photo-grid
       </div>
+
     )
   }
 }
