@@ -14,10 +14,14 @@ import {
 BrowserRouter as Router,
 Route } from 'react-router-dom';
 
+import { ConnectedRouter } from 'react-router-redux';
+
+
+
 const router = (
-  <Router>
+  <ConnectedRouter history={history}>
       <Route path="/" component={Main} />
-  </Router>
+  </ConnectedRouter>
 );
 
 render(router, document.getElementById('root'));
