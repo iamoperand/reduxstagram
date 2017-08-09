@@ -1,10 +1,4 @@
-import { createStore, applyMiddleware } from 'redux';
-import createHistory from 'history/createBrowserHistory';
-import { routerMiddleware } from 'react-router-redux'
-{/*
-  import { syncHistoryWithStore } from 'react-router-redux';
-  import { browserHistory } from 'react-router';
-*/}
+import { createStore } from 'redux';
 
 //import the root reducer
 import rootReducer from './reducers/index';
@@ -19,16 +13,5 @@ const defaultState = {
   comments
 };
 
-// Create a history of your choosing (we're using a browser history in this case)
-export const history = createHistory();
-
-// Build the middleware for intercepting and dispatching navigation actions
-const middleware = routerMiddleware(history)
-
-const store = createStore(rootReducer, defaultState, applyMiddleware(middleware));
-
-{/*
-  export const history = syncHistoryWithStore(browserHistory, store);
-*/}
-
+const store = createStore(rootReducer, defaultState);
 export default store;
