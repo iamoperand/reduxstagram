@@ -16,14 +16,14 @@ BrowserRouter as Router,
 Route } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
-import store from './store';
+import store, { history } from './store';
+import { ConnectedRouter } from 'connected-react-router'
 
 const router = (
   <Provider store={store}>
-    <Router>
-        <Route path="/" component={Main} />
-    </Router>
+    <ConnectedRouter history={history}>
+       <Route path="/" component={Main} />
+    </ConnectedRouter>
   </Provider>
-
 );
 render(router, document.getElementById('root'));
