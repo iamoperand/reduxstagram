@@ -15,9 +15,15 @@ import {
 BrowserRouter as Router,
 Route } from 'react-router-dom';
 
+import { Provider } from 'react-redux';
+import store from './store';
+
 const router = (
-  <Router>
-      <Route path="/" component={Main} />
-  </Router>
+  <Provider store={store}>
+    <Router>
+        <Route path="/" component={Main} />
+    </Router>
+  </Provider>
+
 );
 render(router, document.getElementById('root'));
