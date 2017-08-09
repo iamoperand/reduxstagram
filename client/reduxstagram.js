@@ -9,7 +9,6 @@ import css from './styles/style.styl';
 //import components
 import Main from './components/Main';
 
-
 //import from react-router-dom
 import {
 BrowserRouter as Router,
@@ -20,4 +19,5 @@ const router = (
       <Route path="/" component={Main} />
   </Router>
 );
+
 render(router, document.getElementById('root'));
