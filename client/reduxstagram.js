@@ -18,11 +18,15 @@ import { ConnectedRouter } from 'react-router-redux';
 
 import store, { history } from './store';
 
-const router = (
+import { Provider } from 'react-redux';
 
-  <ConnectedRouter history={history}>
-      <Route path="/" component={Main} />
-  </ConnectedRouter>
+
+const router = (
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+        <Route path="/" component={Main} />
+    </ConnectedRouter>
+  </Provider>
 );
 
 render(router, document.getElementById('root'));
