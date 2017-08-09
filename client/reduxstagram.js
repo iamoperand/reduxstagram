@@ -16,9 +16,10 @@ Route } from 'react-router-dom';
 
 import { ConnectedRouter } from 'react-router-redux';
 
-
+import store, { history } from './store';
 
 const router = (
+
   <ConnectedRouter history={history}>
       <Route path="/" component={Main} />
   </ConnectedRouter>
