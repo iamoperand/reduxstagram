@@ -1,14 +1,12 @@
 import React from 'react';
-
-
+import Photo from './Photo';
+//import Comments
 
 class Single extends React.Component {
   render(){
     return (
       <div className="single-photo">
-        <pre>
-          {JSON.stringify(this.props.comments, null, " ")}
-        </pre>
+        I'm the single
       </div>
     )
   }
