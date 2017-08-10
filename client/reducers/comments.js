@@ -3,7 +3,11 @@
 // 2. the action (info about what happened)
 
 function postComments(state = [], action) {
-
+  switch(action.type) {
+    case 'ADD_COMMENT':
+    case 'REMOVE_COMMENT':
+    default:
+  }
   return state;
 }
 function comments(state = [], action) {
