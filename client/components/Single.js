@@ -4,6 +4,8 @@ import Photo from './Photo';
 
 class Single extends React.Component {
   render(){
+    //index of the post
+    
     return (
       <div className="single-photo">
         I'm the single
