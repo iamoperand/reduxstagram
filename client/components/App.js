@@ -19,3 +19,8 @@ function mapDispatchToProps(dispatch){
 const App = connect(mapStateToProps, mapDispatchToProps)(Main);
 
 export default App;
+
+{/*
+  App is a smart component of Main, which encloses the Main
+  component with methods such as mapStateToProps and mapDispatchToProps.
+*/}
