@@ -3,6 +3,7 @@
 // 2. a copy of current state
 
 function posts(state = [], action) {
+  console.log("The post will load");
   console.log(state, action);
   return state;
 }
