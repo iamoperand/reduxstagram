@@ -1,5 +1,9 @@
 # React-Redux Implementation
 
+## Deployment
+
+The project is deployed at **[http://nikhilarora.me/reduxstagram](http://nikhilarora.me/reduxstagram)**
+
 ## Running
 
 First `npm install` to grab all the necessary dependencies.
