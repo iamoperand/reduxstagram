@@ -24,6 +24,11 @@ class Photo extends React.Component {
 
         <figcaption>
           <p>{post.caption}</p>
+          <div className="control-buttons">
+            <button className="likes">
+               &hearts; {post.likes}
+            </button>
+          </div>
         </figcaption>
      </figure>
    )
