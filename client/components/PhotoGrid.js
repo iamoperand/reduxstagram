@@ -7,12 +7,13 @@ class PhotoGrid extends React.Component {
     return (
       <div className="photo-grid">
           {this.props.posts.map((post, index)=> (<Photo {...this.props} key={index} index={index} post={post} />))}
+          {/*
+            key prop is not accessible inside the Photo Component.
+            That is why, we are passing index as another prop to access it inside
+            the Photo Component
+          */}
       </div>
-      {/*
-        key prop is not accessible inside the Photo Component. 
-        That is why, we are passing index as another prop to access it inside
-        the Photo Component
-      */}
+
     )
   }
 }
