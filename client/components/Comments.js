@@ -9,13 +9,14 @@ class Comments extends React.Component {
           <p>
             <strong>{comment.user}</strong>
             {comment.text}
+
           </p>
         </div>
       )
   }
   render(){
     return (
-      <div className="comment">
+      <div className="comments">
         {this.props.postComments.map(this.renderComment)}
       </div>
     )
