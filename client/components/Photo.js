@@ -3,7 +3,9 @@ import React from 'react';
 
 class Photo extends React.Component {
  render(){
-   return null;
+   <figure className="grid-figure">
+      I am a photo!
+   </figure>
  }
 };
 
