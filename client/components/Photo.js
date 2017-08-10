@@ -21,6 +21,10 @@ class Photo extends React.Component {
           </CSSTransitionGroup>
 
         </div>
+
+        <figcaption>
+          <p>{post.caption}</p>
+        </figcaption>
      </figure>
    )
  }
