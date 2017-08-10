@@ -7,7 +7,7 @@ import { render } from 'react-dom';
 import css from './styles/style.styl';
 
 //import components
-import Main from './components/Main';
+import App from './components/App';
 
 
 //import from react-router-dom
@@ -22,7 +22,7 @@ import { ConnectedRouter } from 'connected-react-router'
 const router = (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-       <Route path="/" component={Main} />
+       <Route path="/" component={App} />
     </ConnectedRouter>
   </Provider>
 );
