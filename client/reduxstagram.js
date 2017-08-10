@@ -29,7 +29,7 @@ provide the props to ConnectedRouter
 const router = (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-       <Route path="/" component={App} />
+       <Route path="/reduxstagram" component={App} />
     </ConnectedRouter>
   </Provider>
 );

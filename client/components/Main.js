@@ -14,13 +14,13 @@ class Main extends React.Component {
     return (
       <div>
         <h1>
-          <Link to="/">Reduxstagram</Link>
+          <Link to="/reduxstagram">Reduxstagram</Link>
         </h1>
 
 
         <Switch>
-          <Route exact path="/" render={props => (<PhotoGrid {...this.props} {...props}/>)}/>
-          <Route path="/view/:postId" render={props => (<Single {...this.props} {...props}/>)} />
+          <Route exact path="/reduxstagram/" render={props => (<PhotoGrid {...this.props} {...props}/>)}/>
+          <Route path="/reduxstagram/view/:postId" render={props => (<Single {...this.props} {...props}/>)} />
         </Switch>
       </div>
     )

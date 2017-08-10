@@ -8,7 +8,7 @@ class Photo extends React.Component {
    return (
      <figure className="grid-figure">
         <div className="grid-photo-wrap">
-          <Link to={`/view/${post.code}`}>
+          <Link to={`/reduxstagram/view/${post.code}`}>
             <img src={post.display_src} alt={post.caption} className="grid-photo"/>
           </Link>
 
@@ -28,7 +28,7 @@ class Photo extends React.Component {
             <button onClick={() => {this.props.increment(index)}} className="likes">
                &hearts; {post.likes}
             </button>
-            <Link className="button" to={`/view/${post.code}`}>
+            <Link className="button" to={`/reduxstagram/view/${post.code}`}>
               <span className="comment-count">
                 <span className="speech-bubble"></span>
                 &nbsp;{comments[post.code] ? comments[post.code].length : 0}
