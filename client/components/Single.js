@@ -8,7 +8,11 @@ class Single extends React.Component {
     const i = this.props.posts.findIndex((post) => post.code ===
     this.props.match.params.postId);
 
-    console.log(i);
+    //get us the post
+    const post = this.props.posts[i];
+    console.log(post);
+
+
     return (
       <div className="single-photo">
         I'm the single
