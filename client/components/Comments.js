@@ -9,7 +9,7 @@ class Comments extends React.Component {
           <p>
             <strong>{comment.user}</strong>
             {comment.text}
-
+            <button className="remove-comment">&times;</button>
           </p>
         </div>
       )
