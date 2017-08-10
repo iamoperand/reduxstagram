@@ -18,3 +18,7 @@ Run `npm build` to create a distro folder and a bundle.js file.
 
 **[Wes Bos](http://wesbos.com/)**, the guy who creates awesome web-development tutorials.  
 You can take a look at his tutorials **[here](http://wesbos.com/courses/)**.
+
+## Bugs and Issues
+
+Have a **bug** or an **issue**? Open a new issue **[here](https://github.com/iamoperand/reduxstagram/issues)** on GitHub.
