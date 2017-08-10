@@ -7,8 +7,8 @@ class Photo extends React.Component {
    return (
      <figure className="grid-figure">
         <div className="grid-photo-wrap">
-          <Link to={`/view/${this.props.post.code}`}>
-            {this.props.post.caption}
+          <Link to={`/view/${post.code}`}>
+            <img src={post.display_src} alt={post.caption} className="grid-photo"/>
           </Link>
         </div>
      </figure>
