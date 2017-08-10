@@ -6,7 +6,9 @@ function postComments(state = [], action) {
   switch(action.type) {
     case 'ADD_COMMENT':
     case 'REMOVE_COMMENT':
+      return state;
     default:
+      return state;
   }
   return state;
 }
