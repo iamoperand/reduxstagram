@@ -19,14 +19,16 @@ export const history = createBrowserHistory();
 if(module.hot) {
   module.hot.accept('./reducers/', () => {
     const nextRootReducer = require('./reducers/index').default;
-    store.replaceReducer(nextRootReducer); 
+    store.replaceReducer(nextRootReducer);
   });
 }
 
+const enhancers = compose(
+  window.devToolsExtension ? window.devToolsExtension() : f => f,
+  applyMiddleware(routerMiddleware(history))
+);
+
 const store = createStore(connectRouter(history)(rootReducer),
-              defaultState,
-              compose(
-                applyMiddleware(routerMiddleware(history)),
-              ));
+              defaultState, enhancers);
 
 export default store;
