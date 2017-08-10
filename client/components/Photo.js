@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 class Photo extends React.Component {
  render(){
+   const { post, index, comments } = this.props;
    return (
      <figure className="grid-figure">
         <div className="grid-photo-wrap">
