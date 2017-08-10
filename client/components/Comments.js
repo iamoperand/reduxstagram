@@ -8,6 +8,7 @@ class Comments extends React.Component {
         <div className="comment" key={i}>
           <p>
             <strong>{comment.user}</strong>
+            {comment.text}
           </p>
         </div>
       )
