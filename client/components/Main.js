@@ -20,7 +20,7 @@ class Main extends React.Component {
 
         <Switch>
           <Route exact path="/" render={() => (<PhotoGrid {...this.props}/>)}/>
-          <Route {...this.props} path="/view/:postId" component={Single} />
+          <Route path="/view/:postId" render={() => (<Single {...this.props}/>)} />
         </Switch>
       </div>
     )
