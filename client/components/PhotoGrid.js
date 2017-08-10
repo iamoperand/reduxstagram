@@ -6,7 +6,7 @@ class PhotoGrid extends React.Component {
   render(){
     return (
       <div className="photo-grid">
-        {JSON.stringify(this.props, null, ' ')}
+        {JSON.stringify(this.props)}
       </div>
 
     )
