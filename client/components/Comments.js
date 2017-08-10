@@ -17,6 +17,7 @@ class Comments extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
+    console.log("Submitting the form");
   }
 
   render(){
