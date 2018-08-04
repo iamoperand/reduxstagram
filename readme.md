@@ -2,7 +2,7 @@
 
 ## Deployment
 
-The project is deployed at **[http://nikhilarora.me/reduxstagram](http://nikhilarora.me/reduxstagram)**
+The project is deployed at **[http://iamoperand.github.io/reduxstagram](http://nikhilarora.me/reduxstagram)**
 
 ## Running
 
